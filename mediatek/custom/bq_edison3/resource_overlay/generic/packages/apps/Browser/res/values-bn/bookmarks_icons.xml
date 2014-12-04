@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bookmark_preloads">
+        <item>@raw/favicon_bqreaders</item>
+        <item>@raw/thumb_bqreaders</item>
+        <item>@raw/favicon_mibqyyo</item>
+        <item>@raw/thumb_mibqyyo</item>
+         <item>@raw/favicon_facebook</item>
+        <item>@raw/thumb_facebook</item>
+        <item>@raw/favicon_twitter</item>
+        <item>@raw/thumb_twitter</item>
+    </array>
+</resources>

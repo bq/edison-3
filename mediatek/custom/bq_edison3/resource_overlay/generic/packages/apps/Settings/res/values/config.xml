@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--[A]remove autorotate screen from accessibility to display, xmwyq, 20140609-->
+    <bool name="config_move_auto_rotate_screen_at_display">true</bool>
+    <!--END xmwyq, 20140608, bug<0024082> -->
+    <!--[A] add power save mode, xmtjf, 20140618-->
+    <bool name="config_show_power_save_mode">true</bool>
+    <!--END.xmtjf,20140618. Bug-Id<25464>-->
+    <!-- [A]remove dock item if unsupport,xmchenc,20140618 -->
+    <bool name="config_default_dock_item_enable">true</bool>
+    <!-- END xmchenc,20140618,Bug-Id<0024154> -->
+    <!-- [A]remove system update setting,xmlinjj,20140619 -->
+    <bool name="config_enable_system_update">false</bool>
+    <!-- END xmlinjj,20140619,Bug-Id<0025586> -->
+    <!-- [A]remove baseband,xmlinjj,20140811 -->
+    <bool name="config_remove_baseband">true</bool>
+    <!-- END xmlinjj,20140811,Bug-Id<0027856> -->
+</resources>
