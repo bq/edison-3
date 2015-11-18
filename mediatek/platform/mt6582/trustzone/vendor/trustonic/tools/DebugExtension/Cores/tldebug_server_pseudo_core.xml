@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<core_definition
+    xmlns="http://www.arm.com/core_definition"
+    xmlns:cr="http://www.arm.com/core_reg"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:tcf="http://com.arm.targetconfigurationeditor"
+    xsi:schemaLocation="http://www.arm.com/core_definition ../Schemas/core_definition.xsd"
+    architecture="ARMv4T">
+    
+    <name>tldebugServerPseudoCore</name>
+    <internal_name>Cortex-A8</internal_name>
+    <series>A</series>
+    
+    <cr:register_list name="Core">
+        <xi:include href="Registers/core_registers_tldebug.xml" xpointer="xmlns(reg_group=http://www.arm.com/core_reg)xpointer(//reg_group:register)"/>
+        <xi:include href="Registers/CPSR/tldebugserver.xml" xpointer="xmlns(reg_group=http://www.arm.com/core_reg)xpointer(//reg_group:register)"/>
+        <!-- Mode enum vals --> 
+        <xi:include href="Registers/CPSR/tldebugserver.xml" xpointer="xmlns(tcf=http://com.arm.targetconfigurationeditor)xpointer(//tcf:enumeration)"/>
+    </cr:register_list>
+</core_definition>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+     <string name="homepage_base" translatable="false">
+        http://www.bq.com</string>
+    <string-array name="bookmarks" translatable="false">
+        <item>bq-E-readers y tab...</item>
+        <item>http://www.bqreaders.com</item>
+        <item>Mi bq y yo</item>
+        <item>http://www.mibqyyo.com/comunidad/</item>
+        <item>facebook.com/bqreaders</item>
+        <item>https://www.facebook.com/bqreaders</item>
+        <item>twitter.com/bqreaders</item>
+        <item>https://twitter.com/bqreaders</item>
+    </string-array>
+</resources>

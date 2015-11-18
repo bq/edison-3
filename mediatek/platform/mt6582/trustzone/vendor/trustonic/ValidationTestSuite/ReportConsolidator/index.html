@@ -1,0 +1,344 @@
+<html>
+<head>
+
+<style type="text/css">
+   H1 {
+      MARGIN-BOTTOM: 2pt;
+      MARGIN-TOP: 2pt;
+      FONT-WEIGHT: bold;
+      FONT-SIZE: 38pt;
+      BACKGROUND-COLOR: #000000;
+      COLOR: #FFFFFF;
+      FONT-FAMILY: Arial
+   }
+   H2
+   {
+	   MARGIN-TOP: 10pt;
+	   MARGIN-BOTTOM: 2pt;
+	   FONT-WEIGHT: bold;
+	   FONT-SIZE: 18pt;
+	   COLOR: #2C2A29;
+      BACKGROUND-COLOR: #00A9E0;
+	   FONT-FAMILY: Arial
+   }
+   H3
+   {
+	   MARGIN-TOP: 10pt;
+	   MARGIN-BOTTOM: 2pt;
+	   FONT-WEIGHT: bold;
+	   FONT-SIZE: 19pt;
+	   COLOR: #00A9E0;
+	   FONT-FAMILY: Arial
+   }
+
+   .tableContainer
+   {
+      border-collapse:separate;
+      border-spacing:2px 2px;
+   }
+
+   .tableHeader
+   {
+	   FONT-WEIGHT: bold;
+	   FONT-SIZE: 14pt;
+	   FONT-FAMILY: Arial;
+	   COLOR: #FFFFFF;
+      BACKGROUND-COLOR: #2C2A29;
+   }
+   .tableSummarize
+   {
+	   FONT-WEIGHT: bold;
+	   FONT-SIZE: 11pt;
+	   FONT-FAMILY: Arial;
+	   COLOR: #000000;
+      BACKGROUND-COLOR: #FFFFFF;
+   }
+   .tableDescr
+   {
+	   FONT-WEIGHT: bold;
+	   FONT-SIZE: 12pt;
+	   FONT-FAMILY: Arial;
+	   COLOR: #FFFFFF;
+	   BACKGROUND-COLOR: #888B8D;
+   }
+   .tableContent
+   {
+	   FONT-WEIGHT: normal;
+	   FONT-SIZE: 10pt;
+	   FONT-FAMILY: Arial;
+	   COLOR: #222222;
+	   BACKGROUND-COLOR: #D8D8D8;
+   }
+
+   BODY
+   {
+	   FONT-SIZE: 10pt;
+	   FONT-FAMILY: Arial;
+	   COLOR: #450000;
+	   BACKGROUND-COLOR: #FFFDFD;
+   }
+
+   BR
+   {
+	   FONT-SIZE: 6pt
+   }
+
+   TD
+   {
+	   FONT-SIZE: 10pt;
+   }
+
+   TD.title_header
+   {
+	   FONT-WEIGHT: bold;
+	   FONT-SIZE: 14pt;
+	   FONT-FAMILY: Arial;
+	   COLOR: #B20000;
+   }
+
+      
+   A:link
+   {
+	   COLOR: #2E2EFE;
+           FONT-SIZE: 14pt;
+	   FONT-WEIGHT: bold;
+	   BACKGROUND-COLOR: transparent;
+	   TEXT-DECORATION: none
+   }
+   A:visited
+   {
+	   COLOR: #2E2EFE;
+           FONT-SIZE: 14pt;
+	   FONT-WEIGHT: bold;
+	   BACKGROUND-COLOR: transparent;
+	   TEXT-DECORATION: none
+   }
+   A:active
+   {
+	   COLOR: #2E2EFE;
+           FONT-SIZE: 14pt;
+	   FONT-WEIGHT: bold;
+	   BACKGROUND-COLOR: transparent;
+	   TEXT-DECORATION: none
+   }
+   A:hover
+   {
+	   COLOR: #F7941E;
+           FONT-SIZE: 14pt;
+	   FONT-WEIGHT: bold;
+	   BACKGROUND-COLOR: transparent;
+	   TEXT-DECORATION: none
+   }
+   A img
+   {
+      border: none;
+   }
+
+
+   A.smallLink:link
+   {
+	   COLOR: #2E2EFE;
+           FONT-SIZE: 10pt;
+	   BACKGROUND-COLOR: transparent;
+	   TEXT-DECORATION: none;
+           margin-left: 1px;
+           margin-right: 1px;
+   }
+   A.smallLink:visited
+   {
+	   COLOR: #2E2EFE;
+           FONT-SIZE: 10pt;
+	   BACKGROUND-COLOR: transparent;
+	   TEXT-DECORATION: none;
+           margin-left: 1px;
+           margin-right: 1px;
+   }
+   A.smallLink:active
+   {
+	   COLOR: #2E2EFE;
+           FONT-SIZE: 10pt;
+	   BACKGROUND-COLOR: transparent;
+	   TEXT-DECORATION: none;
+           margin-left: 1px;
+           margin-right: 1px;
+   }
+   A.smallLink:hover
+   {
+	   COLOR: #F7941E;
+           FONT-SIZE: 10pt;
+	   BACKGROUND-COLOR: transparent;
+	   TEXT-DECORATION: none;
+           margin-left: 1px;
+           margin-right: 1px;
+   }
+
+   .Summary
+   {
+	   FONT-SIZE: 13pt;
+	   FONT-FAMILY: Arial;
+	   FONT-WEIGHT: bolder;
+	   BACKGROUND-COLOR: #E3E3E3;
+   }
+
+   .smallNeutral
+   {
+	   FONT-FAMILY: Arial;
+	   FONT-SIZE: 10pt;
+	   COLOR: #222222;
+   }
+   .smallRed
+   {
+	   FONT-FAMILY: Arial;
+	   FONT-SIZE: 10pt;
+	   COLOR: #FF2222;
+   }
+   .smallGreen
+   {
+	   FONT-FAMILY: Arial;
+	   FONT-SIZE: 10pt;
+	   COLOR: #116B11;
+   }
+   .smallViolet
+   {
+	   FONT-FAMILY: Arial;
+	   FONT-SIZE: 10pt;
+	   COLOR: #EE2A7B;
+   }
+   .smallOrange
+   {
+	   FONT-FAMILY: Arial;
+	   FONT-SIZE: 10pt;
+	   COLOR: #F7941E;
+   }
+   .smallBoldRed
+   {
+	   FONT-FAMILY: Arial;
+	   FONT-SIZE: 10pt;
+	   COLOR: #FF2222;
+      FONT-WEIGHT: bold;
+   }
+   .smallBoldOrange
+   {
+	   FONT-FAMILY: Arial;
+	   FONT-SIZE: 10pt;
+	   COLOR: #F7941E;
+      FONT-WEIGHT: bold;
+   }
+</style>
+<script>
+   function extractUrlParams(f)
+   {	
+      var t = location.search.substring(1).split('&');
+      for (var i=0; i<t.length; i++)
+      {
+         var x = t[ i ].split('=');
+         f[x[0]]=x[1];
+      }
+   }
+
+   function loadXMLDoc(dname)
+   {
+      if (window.XMLHttpRequest)
+      {
+         xhttp=new XMLHttpRequest();
+      }
+      else
+      {
+         xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xhttp.open("GET",dname,false);
+      try
+      {
+         xhttp.send(null);
+      }
+      catch(err)
+      {
+         return null;   
+      }
+      return xhttp.responseXML;
+   }
+
+   function displayResult()
+   {
+      var paramlist = [];
+      paramlist["page"]="";
+      paramlist["group"]="";
+      paramlist["test"]="";
+      extractUrlParams(paramlist)
+      
+      xml_file="report.xml";
+      xsl_file="conf/report.xsl";
+
+      // code for IE
+      if (window.ActiveXObject)
+      {
+         var xslt = new ActiveXObject("Msxml2.XSLTemplate.6.0");
+         var xsldoc = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
+         var xslproc;
+         xsldoc.async = false;
+         xsldoc.load(xsl_file);
+         
+         if (xsldoc.parseError.errorCode != 0) {
+            var myErr = xsldoc.parseError;
+            WScript.Echo("You have error " + myErr.reason);
+         } else {
+            xslt.stylesheet = xsldoc;
+            var xmldoc = new ActiveXObject("Msxml2.DOMDocument.6.0");
+            xmldoc.async = false;
+            xmldoc.load(xml_file);
+            if (xmldoc.parseError.errorCode != 0) {
+               var myErr = xmldoc.parseError;
+               WScript.Echo("You have error " + myErr.reason);
+            } else {
+               xslproc = xslt.createProcessor();
+               xslproc.input = xmldoc;
+               xslproc.addParameter("gGroupName", paramlist["group"]);
+               xslproc.addParameter("gTestName", paramlist["test"]);
+               xslproc.addParameter("gPage", paramlist["page"]);
+               xslproc.transform();
+               
+               //WScript.Echo(xslproc.output);
+               document.getElementById("example").innerHTML=xslproc.output;
+            }
+         }
+         //document.getElementById("example").innerHTML="aaa";
+      }
+ //     else if (window.chrome)
+ //     {
+//      }
+      // code for Mozilla, Firefox, Opera, etc.
+      else if (document.implementation && document.implementation.createDocument)
+      {
+         xml=loadXMLDoc(xml_file);
+         xsl=loadXMLDoc(xsl_file);
+         
+         if((xml==null) || (xsl==null))
+         { 
+            document.getElementById("example").innerHTML="<h3>Because of a browser restriction (disallowing to open local files) you can't see this page.<br><br>Please use an other web browser (Firefox or Internet explorer)<h3/>";
+            if (window.chrome)
+            {
+               document.getElementById("example").innerHTML+="<h3><br>Note: With Chrome you can restart your browser with these options:<br>google-chrome --disable-web-security --allow-files-access-from-files PATH_TO_INDEX_HTML<h3/>";
+            }
+         }
+         else
+         {
+            xsltProcessor=new XSLTProcessor();
+
+            xsltProcessor.setParameter(null, "gGroupName", paramlist["group"]);
+            xsltProcessor.setParameter(null, "gTestName", paramlist["test"]);
+            xsltProcessor.setParameter(null, "gPage", paramlist["page"]);
+
+            xsltProcessor.importStylesheet(xsl);
+            resultDocument = xsltProcessor.transformToFragment(xml,document);
+            document.getElementById("example").appendChild(resultDocument);		  
+         }
+      }
+   }
+</script>
+<meta http-equiv="pragma" content="no-cache"/>
+</head> 
+<body onload="displayResult()">
+<!--   <link type="text/css" href="conf/style.css" rel="stylesheet"/>-->
+   <div id="example" />
+</body>
+</html>

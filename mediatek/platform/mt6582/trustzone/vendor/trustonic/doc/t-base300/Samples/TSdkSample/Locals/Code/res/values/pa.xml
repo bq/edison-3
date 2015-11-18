@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enrollment_url">https://195.81.216.155:44378/service-enabler/enrollment/</string>
+    <string name="spid">4</string>
+    <string name="AesUuid">07020000000000000000000000000000</string>
+    <string name="RsaUuid">07040000000000000000000000000000</string>
+    <string name="Rot13Uuid">04010000000000000000000000000000</string>
+    <string name="Sha256Uuid">06010000000000000000000000000000</string>
+    <string name="sp_key">bd24841045187256294f091c6f382326b14db8149d5583930496a5f7d901a032</string>
+    <string name="ta_key">000102030405060708090a0b0c0d0e0f000102030405060708090a0b0c0d0e0f</string>
+</resources>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--Copyright (C) 2009-2011 ARM Limited. All rights reserved.-->
+<?RVConfigUtility MajorVersion = "0" MinorVersion = "0" PatchVersion = "0"?>
+<RVConfigUtility>
+   <RVConfigModule>
+      <?RVConfig DLL_NAME = "connection" MajorVersion = "1" MinorVersion = "0" PatchVersion = "0" Expanded = "true" Active = "false" Enabled = "true" UserLabel = ""?>
+      <ScanChainNames Type = "Str">?</ScanChainNames>
+      <ConnectionManager Type = "User" Inherited = "true">0x00AE86E4</ConnectionManager>
+      <TemplateManager Type = "User" Inherited = "true">0x00AE8700</TemplateManager>
+      <BrokerCoreList Type = "User" Inherited = "true">0x00AE8734</BrokerCoreList>
+      <PlatformName Type = "Str" Inherited = "true"/>
+      <NoOfScanChains Type = "Int32" Inherited = "true">1</NoOfScanChains>
+      <FirmwareVersion Type = "Str">4.5.0</FirmwareVersion>
+      <ConnectionName Type = "Str" Inherited = "true"/>
+      <ChildModuleName Type = "Str" Inherited = "true">Devices</ChildModuleName>
+      <RVConfigModule>
+         <?RVConfig DLL_NAME = "scanchain" Expanded = "true" Active = "true" Enabled = "true" UserLabel = ""?>
+         <TemplateName Type = "Str" Inherited = "true">00000000000000000000000000000000</TemplateName>
+         <ChildModuleName Type = "Str" Inherited = "true">Trusted_App</ChildModuleName>
+         <Class Type = "Str">CoreExecutable</Class>
+         <CanonicalName Type = "Str">Trusted_App</CanonicalName>
+         <DeviceOptions Type = "Str" Inherited = "true"/>
+         <IRLength Type = "Str" Inherited = "true">4</IRLength>
+         <RVConfigModule>
+            <?RVConfig DLL_NAME = "dynamiccore" Expanded = "true" Active = "false" Enabled = "true" UserLabel = ""?>
+            <TemplateName Type = "Str">04010000000000000000000000000000</TemplateName>
+            <ModuleName Type = "Str">Trusted_App</ModuleName>
+            <IRLength Type = "Str">4</IRLength>
+            <DeviceOptions Type = "Str"/>
+            <CanonicalName Type = "Str">Trusted_App_cn</CanonicalName>
+            <Class Type = "Str">CoreExecutable</Class>
+            <ExtendedTypeInfo Type = "Branch"/>
+         </RVConfigModule>
+         <ModuleName Type = "Str">Devices</ModuleName>
+         <DataList Type = "Branch">
+            <DataListUID Type = "User">0x00000002</DataListUID>
+            <ClockType Type = "Int32">7</ClockType>
+            <ClockSpeed Type = "Str">5000000</ClockSpeed>
+            <OtherSpeed Type = "Str">5.000 MHz</OtherSpeed>
+            <Tap_Count Type = "UInt32">1</Tap_Count>
+            <Tap_0 Type = "Branch">
+               <DataListUID Type = "User">0x00000005</DataListUID>
+               <CoreName Type = "Str">Trusted_App_c</CoreName>
+               <DllName Type = "Str">dynamiccore</DllName>
+               <TemplateVersion Type = "Str">1:0:0</TemplateVersion>
+               <DllVersion Type = "Str">rvi.dynamic.core</DllVersion>
+               <Description Type = "Str">Trusted_App_d</Description>
+               <IRLength Type = "Str">4</IRLength>
+               <TemplateName Type = "Str">/real-ice/jtag-templates/arm/arm926ejs/V1.0</TemplateName>
+               <DeviceID Type = "Str">0x07926F0F</DeviceID>
+               <Manufacturer Type = "Str">UNKNOWN (Generic ARM)</Manufacturer>
+               <DeviceOptions Type = "Str"/>
+               <Class Type = "Str">CoreExecutable</Class>
+               <CanonicalName Type = "Str">Trusted_App_cn</CanonicalName>
+            </Tap_0>
+         </DataList>
+      </RVConfigModule>
+      <ConnectionType Type = "Str">TCP/IP</ConnectionType>
+      <CoresightAssociations Type = "Branch">
+         <Device Type = "EnumStr">Name=Trusted_App;Type=Trusted_App</Device>
+      </CoresightAssociations>
+   </RVConfigModule>
+</RVConfigUtility>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Copyright (C) 2009-2011 ARM Limited. All rights reserved.-->
+<platform_data
+    type="HARDWARE"
+    xmlns:peripheral="http://com.arm.targetconfigurationeditor"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.arm.com/project_type"
+    xsi:schemaLocation="http://www.arm.com/project_type ../../../Schemas/platform_data-1.xsd">
+    <project_type_list>
+        <project_type type="BARE_METAL">
+            <name language="en">Bare Metal Debug</name>
+            <description language="en">This allows a bare-metal debug connection.</description>
+            <execution_environment id="BARE_METAL">
+                <name language="en">&lt;t-base Trusted Application Debug</name>
+                <description language="en">Connect to a TA using &lt;t-base Debug Server</description>
+                <param default="04010000000000000000000000000000" id="trustlet_uuid" type="string" visible="true">
+                  <name language="en">Trusted Application UUID</name>
+                  <description language="en">The UUID of the TA to be debugged</description>
+                </param>
+                <param default="CDB://trusted_app.rvc" id="config_file" type="string" visible="true">
+                  <name language="en">TA Resource File</name>
+                  <description language="en">Trusted Application resource configuration file</description>
+                </param>
+                <param default="3010" id="tcp_port" type="string" visible="true">
+                  <name language="en">Server Port</name>
+                  <description language="en">Connection port for the &lt;t-base Debug Server</description>
+                </param>
+                <param id="rvi_address" type="string" visible="true">
+                  <name language="en">Server Address</name>
+                  <description language="en">Address of the &lt;t-base Debug Server prefixed with TCP:</description>
+                </param>
+                <activity id="ICE_DEBUG" type="Debug">
+                    <name language="en">Debug a &lt;t-base Trusted Application</name>
+                    <description language="en">DS-5 Debugger will connect to &lt;t-base Debug Server to debug a trustlet.</description>
+                    <core connection_id="Trusted_App" core_definition="tldebugServerPseudoCore"/>
+                </activity>
+            </execution_environment>
+        </project_type>
+    </project_type_list>
+</platform_data>

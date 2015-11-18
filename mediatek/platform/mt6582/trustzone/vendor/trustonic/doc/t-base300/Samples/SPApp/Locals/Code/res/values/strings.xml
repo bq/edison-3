@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SP-App Rot13</string>
+    <string name="cipherTextHint">Rot13 cipher from t-base will appear here</string>
+    <string name="expectedCipherTextHint">Expected Rot13 cipher will appear here</string>
+</resources>

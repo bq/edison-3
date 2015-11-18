@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	  <!-- OOBE part begin -->
+    <string name="oobe_internet_gprs_or_wifi_summary">选择您要使用的网络连接。您稍后可以通过平板设置来改变设定。</string>  
+    <string name="basic_congratulation_summary">您已完成了所有的基本设定，现在就可以使用您的平板了。\n\n您还可以随时通过启动器中的设置向导来修改这些设定。</string>  
+    <!-- OOBE part end -->
+
+    <!-- Quick study guide part begin -->
+    <string name="qsg_summary_begin">快速向导将提供4段动画，给您介绍操作平板的基本手势和知识。</string>
+    <string name="qsg_summary_end">您已经学习了所有快速向导提供的操作演示。 \n\n如果您想重新播放，请点击“重播”按钮。\n\n您也可以点击“结束”按钮，开始使用平板。</string>
+    <!-- Quick study guide part end -->
+</resources>

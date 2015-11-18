@@ -1,0 +1,237 @@
+/*
+   Trustonic colors
+
+   black:#2C2A29
+   blue:#00A9E0
+   grey:#888B8D
+   
+   pink:#EE2A7B
+   green:#D7DF23
+   orange:#F7941E
+   
+*/
+	
+H1 {
+   MARGIN-BOTTOM: 2pt;
+   MARGIN-TOP: 2pt;
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 38pt;
+   BACKGROUND-COLOR: #000000;
+   COLOR: #FFFFFF;
+   FONT-FAMILY: Arial
+}
+H2
+{
+	MARGIN-TOP: 10pt;
+	MARGIN-BOTTOM: 2pt;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 18pt;
+	COLOR: #2C2A29;
+   BACKGROUND-COLOR: #00A9E0;
+	FONT-FAMILY: Arial
+}
+H3
+{
+	MARGIN-TOP: 10pt;
+	MARGIN-BOTTOM: 2pt;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 19pt;
+	COLOR: #00A9E0;
+	FONT-FAMILY: Arial
+}
+
+.tableContainer
+{
+   border-collapse:separate;
+   border-spacing:2px 2px;
+}
+
+.tableHeader
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14pt;
+	FONT-FAMILY: Arial;
+	COLOR: #FFFFFF;
+   BACKGROUND-COLOR: #2C2A29;
+}
+.tableSummarize
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11pt;
+	FONT-FAMILY: Arial;
+	COLOR: #000000;
+   BACKGROUND-COLOR: #FFFFFF;
+}
+.tableDescr
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12pt;
+	FONT-FAMILY: Arial;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #888B8D;
+}
+.tableContent
+{
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10pt;
+	FONT-FAMILY: Arial;
+	COLOR: #222222;
+	BACKGROUND-COLOR: #D8D8D8;
+   /*border: thin solid #00A9E0;
+   border-collapse: collapse*/
+}
+
+BODY
+{
+	FONT-SIZE: 10pt;
+	FONT-FAMILY: Arial;
+	COLOR: #450000;
+	BACKGROUND-COLOR: #FFFDFD;
+}
+
+BR
+{
+	FONT-SIZE: 6pt
+}
+
+TD
+{
+	FONT-SIZE: 10pt;
+}
+
+TD.title_header
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14pt;
+	FONT-FAMILY: Arial;
+	COLOR: #B20000;
+}
+
+   
+A:link
+{
+	COLOR: #2E2EFE;
+        FONT-SIZE: 14pt;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: transparent;
+	TEXT-DECORATION: none
+}
+A:visited
+{
+	COLOR: #2E2EFE;
+        FONT-SIZE: 14pt;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: transparent;
+	TEXT-DECORATION: none
+}
+A:active
+{
+	COLOR: #2E2EFE;
+        FONT-SIZE: 14pt;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: transparent;
+	TEXT-DECORATION: none
+}
+A:hover
+{
+	COLOR: #F7941E;
+        FONT-SIZE: 14pt;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: transparent;
+	TEXT-DECORATION: none
+}
+A img
+{
+   border: none;
+}
+
+
+A.smallLink:link
+{
+	COLOR: #2E2EFE;
+        FONT-SIZE: 10pt;
+	BACKGROUND-COLOR: transparent;
+	TEXT-DECORATION: none;
+        margin-left: 1px;
+        margin-right: 1px;
+}
+A.smallLink:visited
+{
+	COLOR: #2E2EFE;
+        FONT-SIZE: 10pt;
+	BACKGROUND-COLOR: transparent;
+	TEXT-DECORATION: none;
+        margin-left: 1px;
+        margin-right: 1px;
+}
+A.smallLink:active
+{
+	COLOR: #2E2EFE;
+        FONT-SIZE: 10pt;
+	BACKGROUND-COLOR: transparent;
+	TEXT-DECORATION: none;
+        margin-left: 1px;
+        margin-right: 1px;
+}
+A.smallLink:hover
+{
+	COLOR: #F7941E;
+        FONT-SIZE: 10pt;
+	BACKGROUND-COLOR: transparent;
+	TEXT-DECORATION: none;
+        margin-left: 1px;
+        margin-right: 1px;
+}
+
+.Summary
+{
+	FONT-SIZE: 13pt;
+	FONT-FAMILY: Arial;
+	FONT-WEIGHT: bolder;
+	BACKGROUND-COLOR: #E3E3E3;
+}
+
+.smallNeutral
+{
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 10pt;
+	COLOR: #222222;
+}
+.smallRed
+{
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 10pt;
+	COLOR: #FF2222;
+}
+.smallGreen
+{
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 10pt;
+	COLOR: #116B11;
+}
+.smallViolet
+{
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 10pt;
+	COLOR: #EE2A7B;
+}
+.smallOrange
+{
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 10pt;
+	COLOR: #F7941E;
+}
+.smallBoldRed
+{
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 10pt;
+	COLOR: #FF2222;
+   FONT-WEIGHT: bold;
+}
+.smallBoldOrange
+{
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 10pt;
+	COLOR: #F7941E;
+   FONT-WEIGHT: bold;
+}

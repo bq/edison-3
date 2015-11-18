@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <integer name="config_soundEffectVolumeDb">40</integer><!--[A] modify the sound-effect volume. xmlisj 20140417 MT-BUG:0022022-->
+
+    <!-- Safe headphone volume index. When music stream volume is below this index
+    the SPL on headphone output is compliant to EN 60950 requirements for portable music
+    players. -->
+    <integer name="config_safe_media_volume_index">10</integer>
+    <integer name="config_screenBrightnessSettingMinimum">40</integer>
+
+</resources>

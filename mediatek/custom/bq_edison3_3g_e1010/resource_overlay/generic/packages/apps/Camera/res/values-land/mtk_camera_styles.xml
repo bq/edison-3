@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ShutterGroup" parent="ScreenMargin">
+        <item name="android:layout_height">@dimen/shutter_group_height</item>
+        <item name="android:layout_width">@dimen/shutter_group_width</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_shutter_background</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+</resources>

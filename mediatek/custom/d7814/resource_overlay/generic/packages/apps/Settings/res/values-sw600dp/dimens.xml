@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="appwidget_min_width">377dip</dimen><!--[A] xmchenc 20140429 MT-BUG:0020856-->
+</resources>

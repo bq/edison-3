@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/plainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:lines="2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:inputType="text|textNoSuggestions"
+        />
+
+    <Button
+        android:id="@+id/rot13SWdButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/plainText"
+        android:text="SWd Rot13 cipher"
+        android:onClick="rot13SWd"
+        />
+
+    <TextView
+        android:id="@+id/cipherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:lines="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rot13SWdButton"
+        android:editable="false"
+        android:hint="@string/cipherTextHint"
+        />
+
+    <Button
+        android:id="@+id/rot13NWdButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cipherText"
+        android:text="NWd Rot13 cipher"
+        android:onClick="rot13NWd"
+        />
+
+    <TextView
+        android:id="@+id/expectedCipherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:lines="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rot13NWdButton"
+        android:editable="false"
+        android:hint="@string/expectedCipherTextHint"
+        />
+
+    <Button
+        android:id="@+id/uninstallRot13SWdButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/expectedCipherText"
+        android:text="Uninstall SWd Rot13 cipher"
+        android:onClick="uninstallRot13SWd"
+        />
+
+</RelativeLayout>

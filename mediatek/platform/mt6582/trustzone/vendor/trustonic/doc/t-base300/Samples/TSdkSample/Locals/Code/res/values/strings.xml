@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TSdkSample</string>
+    <string name="home_actionbar_title">&lt;t-sdk Sample</string>
+    <string name="home_actionbar_subtitle">by Trustonic</string>
+    <string name="provisioning_text">Now provisioning samples...</string>
+    <string name="provisioning_ok_text">All samples successfully provisioned.</string>
+    <string name="provisioning_ko_text">Error: Samples could not be provisioned.\nPlease check your network settings and restart application.</string>    
+    <string name="home_button_aes">Start AES sample</string>
+    <string name="home_button_rot13">Start Rot13 sample</string>
+    <string name="home_button_rsa">Start RSA sample</string>
+    <string name="home_button_sha256">Start SHA256 sample</string>
+    <string name="rot13_default_text">The quick brown fox jumps over the lazy dog</string>
+    <string name="cipherTextHint">Rot13 cipher from t-base will appear here</string>    
+</resources>

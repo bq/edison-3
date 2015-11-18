@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--[A]Add for correcting panorama direction.xmyyb.20140429-->
+    <bool name="change_panorama_direction">true</bool>
+    <!--END.xmyyb.20140429-->
+</resources>

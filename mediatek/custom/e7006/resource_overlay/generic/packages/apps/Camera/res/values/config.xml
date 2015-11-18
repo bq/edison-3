@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--[A]Fix camera default to 4:3 preview.xmfxj,20140326,MT-Bug 20495-->
+    <bool name="picture_size_default_4_3">true</bool>
+</resources>

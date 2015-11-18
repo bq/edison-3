@@ -1,0 +1,81 @@
+Call to check_parameters: 
+  product test definition file=Locals/ProductTestDefinitions/VALIDATION.xml
+  source_path=Locals/Code/ValidationTest
+  working_directory=Locals/Code/ValidationTest
+Call to parsePTDFile function to parse the product test definition file given as input 
+Scanning all sources files  for matching excludes specified in product test definition file :
+Processing file :Locals/Code/ValidationTest/tlApiErrorStrings.cpp
+Processing file :Locals/Code/ValidationTest/mcErrorStrings.cpp
+Processing file :Locals/Code/ValidationTest/TrustletForwarder.cpp
+Processing file :Locals/Code/ValidationTest/McDriverTest.cpp
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00110_MemoryMappingIsolationMCDriverAPI.cpp
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00500_IOCTLAbuse.cpp
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00120_MemoryMappingTCIReadData.cpp
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00400_DaemonRegistry.cpp
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00202_TlcForkSharedWSM.cpp
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00201_sessionIDNoClientLib.cpp
+ WARNING: Filename Locals/Code/ValidationTest/NwdSecurityTesting/00201_sessionIDNoClientLib is different of test name 00201_StealSessionIDNoClientLib
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00100_MemoryMappingIsolationIOCTL.cpp
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00300_Integration.cpp
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00200_sessionID.cpp
+ WARNING: Filename Locals/Code/ValidationTest/NwdSecurityTesting/00200_sessionID is different of test name 00200_StealSessionID
+Processing file :Locals/Code/ValidationTest/NwdSecurityTesting/00101_MemoryRemappingIsolationIOCTL.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00300_mcMallocWsm.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00100_mcOpenDevice.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00200_mcCloseDevice.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00400_mcFreeWsm.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00700_mcNotify.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/01100_mcUnmap.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00800_mcWaitNotification.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00900_mcGetSessionErrorCode.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00600_mcCloseSession.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/00500_mcOpenSession.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/01200_mcGetRngSeed.cpp
+Processing file :Locals/Code/ValidationTest/MobiCoreDriverAPI/01000_mcMap.cpp
+Processing file :Locals/Code/ValidationTest/Common/TestUtils.cpp
+Processing file :Locals/Code/ValidationTest/SystemCallApi/00100_SysCallTlSecurity.cpp
+ WARNING: Filename Locals/Code/ValidationTest/SystemCallApi/00100_SysCallTlSecurity is different of test name 00100_syscall_tl_security
+Processing file :Locals/Code/ValidationTest/TrustletApi/Algorithms/00021_DES_ADV.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/Algorithms/00010_RSA_PSS.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/CR/00800_tlApiCrRsaCrt.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/CR/00700_tlApiCrAbort.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/CR/00400_tlApiCipherInitWithData.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/CR/00600_tlApiCipherDoFinal.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/CR/00200_tlApiRandomGenerateData.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/CR/00300_tlApiCipherInit.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/CR/00500_tlApiCipherUpdate.cpp
+Processing file :Locals/Code/ValidationTest/TrustletApi/CR/00100_tlApiGenerateKeyPair.cpp
+Processing file :Locals/Code/ValidationTest/Runtime/00501_DynamicDriver2.cpp
+   Removing Locals/Code/ValidationTest/Runtime/00501_DynamicDriver2.cpp source file because this test is explicitly excluded in the product test definition
+Processing file :Locals/Code/ValidationTest/Runtime/00400_Communication.cpp
+Processing file :Locals/Code/ValidationTest/Runtime/00503_DynamicDriver4.cpp
+Processing file :Locals/Code/ValidationTest/Runtime/00500_DynamicDriver.cpp
+Processing file :Locals/Code/ValidationTest/Runtime/00502_DynamicDriver3.cpp
+Processing file :Locals/Code/ValidationTest/Runtime/00301_Trustlet_Endless_Loop.cpp
+Processing file :Locals/Code/ValidationTest/Runtime/00100_TrustletCommands.cpp
+Processing file :Locals/Code/ValidationTest/Runtime/00300_Dead_Trustlet.cpp
+Processing file :Locals/Code/ValidationTest/Runtime/00600_CpuCoreAvailability.cpp
+Processing file :Locals/Code/ValidationTest/MemoryManagement/00200_Tci_tests.cpp
+   Removing Locals/Code/ValidationTest/MemoryManagement/00200_Tci_tests.cpp source file because this test is explicitly excluded in the product test definition
+Processing file :Locals/Code/ValidationTest/MemoryManagement/00100_mcMapBoundaryTests.cpp
+Processing file :Locals/Code/ValidationTest/MemoryManagement/00600_MpuProtection.cpp
+   Removing Locals/Code/ValidationTest/MemoryManagement/00600_MpuProtection.cpp source file because this test is explicitly excluded in the product test definition
+Processing file :Locals/Code/ValidationTest/MemoryManagement/00800_TlDrvMapSecurity.cpp
+   Removing Locals/Code/ValidationTest/MemoryManagement/00800_TlDrvMapSecurity.cpp source file because this test is explicitly excluded in the product test definition
+   Removing the Locals/Code/ValidationTest/TrustletApi/Algorithms directory corresponding to CryptoDriverAlgorithms group 
+   Removing the Locals/Code/ValidationTest/TrustletApi/CR directory corresponding to TrustletApiCR group 
+   Removing the Locals/Code/ValidationTest/SystemCallApi directory corresponding to SystemCallApi group 
+   Removing the Locals/Code/ValidationTest/NwdSecurityTesting directory corresponding to NwdSecurityTesting group 
+Setting Timeout Values  
+   TIMEOUT_LONG_VALUE = 600 
+   TIMEOUT_MEDIUM_VALUE = 180
+   TIMEOUT_SHORT_VALUE = 60
+   TIMEOUT_DEFAULT_VALUE = 30
+*****************************************: 
+* SUMMARY: 
+* Get 122 / 453 test cases from the test base: 
+* 3 group(s) included 
+* 0 group(s) excluded   
+* 4  test(s) removed
+* 0  test(s) case(s) removed
+*****************************************: 

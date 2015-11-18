@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- [M] add the operator-name. xmlisj 20140221 -->
+    <dimen name="close_handle_height_with_operator">72dp</dimen>
+    <dimen name="padding_close_handle_bottom">36dp</dimen>
+    <!-- End xmlisj 20140221 -->
+</resources>

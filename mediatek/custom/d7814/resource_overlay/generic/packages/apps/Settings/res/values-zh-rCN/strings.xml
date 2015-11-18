@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="screensaver_settings_disabled_prompt" msgid="3857507943322777651">"要控制平板电脑在休眠状态下的行为，请启用“互动屏保”。"</string>
+    <!-- [A]modify string,xmlinjj,201403262 -->
+    <string name="power_cell" msgid="6596471490976003056">"电池待机"</string>
+    <string name="power_idle" product="default" msgid="9055659695602194990">"电池待机"</string>
+    <string name="battery_desc_radio" msgid="5479196477223185367">"射频所耗的电量"</string>
+    <!-- END xmlinjj,20140326,Bug-Id<0020373> -->
+</resources>
