@@ -1963,7 +1963,7 @@ UINT32 OV5693MIPIOpen(void)
 	
 	read_otp_date();
 	printk("honghaishen_ov5693 otp year is %d, month is %d, day is %d \n",ov5693_otp_data_year,ov5693_otp_data_month,ov5693_otp_data_day);
-	if( (14*13*32 + 7*32 + 17) > (ov5693_otp_data_year*13*32 + ov5693_otp_data_month * 32 + ov5693_otp_data_day) )
+	if( (14*13*32 + 7*32 + 18) > (ov5693_otp_data_year*13*32 + ov5693_otp_data_month * 32 + ov5693_otp_data_day) )
 		is_ov5693=1;
 	if( ((14*13*32 + 11*32 + 14) > (ov5693_otp_data_year*13*32 + ov5693_otp_data_month * 32 + ov5693_otp_data_day) )
 		&& ((14*13*32 + 10*32 + 28) < (ov5693_otp_data_year*13*32 + ov5693_otp_data_month * 32 + ov5693_otp_data_day) ) )
@@ -2047,7 +2047,7 @@ UINT32 OV5693GetSensorID(UINT32 *sensorID)
 	
 	read_otp_date();
 	printk("honghaishen_ov5693 otp year is %d, month is %d, day is %d \n",ov5693_otp_data_year,ov5693_otp_data_month,ov5693_otp_data_day);
-	if( (14*13*32 + 7*32 + 17) > (ov5693_otp_data_year*13*32 + ov5693_otp_data_month * 32 + ov5693_otp_data_day) )
+	if( (14*13*32 + 7*32 + 18) > (ov5693_otp_data_year*13*32 + ov5693_otp_data_month * 32 + ov5693_otp_data_day) )
 		is_ov5693=1;
 	if( ((14*13*32 + 11*32 + 14) > (ov5693_otp_data_year*13*32 + ov5693_otp_data_month * 32 + ov5693_otp_data_day) )
 		&& ((14*13*32 + 10*32 + 27) < (ov5693_otp_data_year*13*32 + ov5693_otp_data_month * 32 + ov5693_otp_data_day) ) )

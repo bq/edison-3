@@ -163,12 +163,12 @@ static int confirm_hwreboot(void)
 }
 static void suspend_notify(void)
 {
-  mtk_wd_suspend();
+  //mtk_wd_suspend();
 }
 
 static void resume_notify(void)
 {
-  mtk_wd_resume();
+  //mtk_wd_resume();
 }
 
 static int disable_all_wd(void)
