@@ -753,7 +753,7 @@ MTK_FOTA_SUPPORT=no
 # Low cost phone using increasingly smaller  RAM size, the size of the SD card. Customers  can choose fsck_msdos_mtk to time for space.
 MTK_FSCK_MSDOS_MTK=no
 MTK_FSCK_TUNE=no
-MTK_FW_UPGRADE=yes
+MTK_FW_UPGRADE=NO
 MTK_FW_UPGRADE_APP=no
 MTK_GAMELOFT_ASPHALTINJECTION_APP=no
 MTK_GAMELOFT_GLLIVE_APP=no

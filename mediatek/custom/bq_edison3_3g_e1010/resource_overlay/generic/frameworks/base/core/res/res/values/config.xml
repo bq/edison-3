@@ -56,7 +56,6 @@
 
     <!-- Led shine when battery level dips to this value -->
     <integer name="config_ledLowBatteryWarningLevel">6</integer>
-
     <!--[A]modify default value for led color when battery is medium charged from orange to red.-->
     <integer name="config_notificationsBatteryMediumARGB">0xFFFF0000</integer>
     <!--END-->
