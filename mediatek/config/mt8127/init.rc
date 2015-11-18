@@ -689,6 +689,7 @@ on post-fs-data
     chmod 0660 /dev/kd_camera_flashlight
     chmod 0660 /dev/kd_camera_hw_bus2
     chmod 0660 /dev/FM50AF
+    chmod 0660 /dev/OV5694AF
     chmod 0660 /dev/OV5648AF
     chmod 0660 /dev/CAM_CAL_DRV
 
@@ -700,6 +701,7 @@ on post-fs-data
     chown system camera /dev/kd_camera_hw_bus2
     chown system camera /dev/FM50AF
     chown system camera /dev/OV5648AF
+    chown system camera /dev/OV5694AF
     chown system camera /dev/CAM_CAL_DRV
 
 

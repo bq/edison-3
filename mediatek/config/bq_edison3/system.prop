@@ -61,3 +61,6 @@ persist.sys.sensor_mode=land
 ro.sys.sensor_mode=land
 
 persist.service.hdcpkey.enable=1
+
+#Add the shutanimation
+ro.operator.optr=CUST

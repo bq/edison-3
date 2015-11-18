@@ -13,6 +13,7 @@
 /* LENS ID */
 #define DUMMY_LENS_ID                        0xFFFF
 #define FM50AF_LENS_ID                       0x0001
+#define OV5694AF_LENS_ID                       0x5694
 #define MT9P017AF_LENS_ID                    0x0002
 
 #define SENSOR_DRIVE_LENS_ID                 0x1000

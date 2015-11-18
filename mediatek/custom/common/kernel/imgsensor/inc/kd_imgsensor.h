@@ -146,6 +146,7 @@
 #define OV12830_SENSOR_ID			  0xC830
 #define OV5648MIPI_SENSOR_ID                    0x5648
 #define OV5693_SENSOR_ID                        0x5690
+#define OV5694_SENSOR_ID                        0x5694
 
 #define PO6030K_SENSOR_ID                       0x0060
 #define PO4010K_SENSOR_ID                       0x0040
@@ -256,6 +257,7 @@
 #define SENSOR_DRVNAME_OV5647_RAW   	"ov5647"
 #define SENSOR_DRVNAME_OV5648_MIPI_RAW   	"ov5648mipi"
 #define SENSOR_DRVNAME_OV5693_MIPI_RAW     "ov5693mipi"
+#define SENSOR_DRVNAME_OV5694_MIPI_RAW     "ov5694mipi"
 #define SENSOR_DRVNAME_OV5642_MIPI_YUV    "ov5642mipiyuv"
 #define SENSOR_DRVNAME_OV5642_MIPI_RGB    "ov5642mipirgb"
 #define SENSOR_DRVNAME_OV5642_MIPI_JPG     "ov5642mipijpg"

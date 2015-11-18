@@ -167,6 +167,7 @@ if($EMMC_SUPPORT eq "yes"){
 #	$SHEET_NAME = "emmc";
 
     if($PROJECT eq "bq_edison3"
+       || $PROJECT eq "fnac_40_10_e1003"
       ){
         $SHEET_NAME = $PROJECT . " emmc";
     } else {
