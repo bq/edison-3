@@ -414,23 +414,12 @@ int update_otp(void)
 #endif
     /*[E] add for distinguishing camera module by xmcwy 20140728 */
 
-    if(current_otp.light_rg == 0){		
-        // no light source information in OTP
+   
         rg=current_otp.rg_ratio;
-    }
-    else{	
-        // light source information found in OTP
-        rg=current_otp.rg_ratio*(current_otp.light_rg +512 )/1024;       
-    }
-
-    if(current_otp.light_bg == 0){
-         // no light source information in OTP
         bg=current_otp.bg_ratio;
-    }
-    else{
-        // light source information found in OTP
-        bg=current_otp.bg_ratio*(current_otp.light_bg +512 )/1024;       
-    }
+	 printk("xmhhs_camera rg is %d, bg is %d]\n",rg,bg);
+	 printk("xmhhs_camera rg_type is %d, bg_type is %d \n",RG_Ratio_Typical,BG_Ratio_Typical);
+		
 
     //calculate G gain
     //0x400 =1xgain
