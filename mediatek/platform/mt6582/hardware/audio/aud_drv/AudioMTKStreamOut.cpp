@@ -699,6 +699,7 @@ ssize_t AudioMTKStreamOut::write(const void *buffer, size_t bytes)
 
 
     //staring DL digital part.
+    mDuringFirstDataWrite = !GetStreamRunning();
     if (GetStreamRunning() == false)
     {
 
@@ -1470,7 +1471,7 @@ status_t AudioMTKStreamOut::setCallBack(stream_callback_t callback, void *cookie
 
 status_t AudioMTKStreamOut::getPresentationPosition(uint64_t *frames, struct timespec *timestamp)
 {
-	return INVALID_OPERATION;
+
     ALOGV("%s()",__FUNCTION__);
 
     *frames = mPresentedBytes / (uint64_t) (mDL1Attribute->mChannels * (mDL1Attribute->mFormat == AUDIO_FORMAT_PCM_8_BIT ? 1 : 2));
@@ -1839,7 +1840,7 @@ size_t AudioMTKStreamOut::WriteDataToAudioHW(const void *buffer, size_t bytes)
         if (mFilters)
         {
             outputSize = bufferSize() > bytes ? bytes : bufferSize();
-            mFilters->start();
+            mFilters->start(mDuringFirstDataWrite);
             outputSize = mFilters->process(inbuffer, bytes, outbuffer,outputSize);
             //#if defined(MTK_VIBSPK_SUPPORT) //Add Vibration Signal to Out
             if (IsAudioSupportFeature(AUDIO_SUPPORT_VIBRATION_SPEAKER))

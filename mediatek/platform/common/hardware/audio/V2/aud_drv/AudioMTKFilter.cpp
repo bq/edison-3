@@ -96,14 +96,14 @@ status_t AudioMTKFilter::init()
     return NO_INIT;
 }
 
-void AudioMTKFilter::start()
+void AudioMTKFilter::start(bool bfirstdatawrite)
 {
     Mutex::Autolock _l(mLock);
     if (mFilter && !mActive)
     {
         SXLOGD("AudioMTKFilter::start() type %d mode %d", mType, mMode);
 
-        mFilter->SetWorkMode(mChannel, mSampleTate, mMode);
+        mFilter->SetWorkMode(mChannel, mSampleTate, mMode, bfirstdatawrite?false:true);
         mFilter->Open();
         mStart  = true;
         mActive = true;
@@ -118,8 +118,8 @@ void AudioMTKFilter::stop()
     {
         SXLOGD("AudioMTKFilter::stop() type %d mode %d", mType, mMode);
         //mFilter->Stop();
-        //        mFilter->Close();
         mFilter->ResetBuffer();
+        mFilter->Close();
         mStart  = false;
         mActive = false;
     }
@@ -341,7 +341,7 @@ bool AudioMTKFilterManager::init()
     return NO_ERROR;
 }
 
-void AudioMTKFilterManager::start()
+void AudioMTKFilterManager::start(bool bfirstdatawrite)
 {
     uint32_t device = mDevices;
     SXLOGV("start() device 0x%x", device);
@@ -352,10 +352,10 @@ void AudioMTKFilterManager::start()
         if (mHeadphoneFilter) { mHeadphoneFilter->stop(); }
         if (mEnhanceFilter) { mEnhanceFilter->stop(); }
         // start acf
-        if (mSpeakerFilter) { mSpeakerFilter->start(); }
+        if (mSpeakerFilter) { mSpeakerFilter->start(bfirstdatawrite); }
 //#if defined(MTK_VIBSPK_SUPPORT)
         if (IsAudioSupportFeature(AUDIO_SUPPORT_VIBRATION_SPEAKER))
-        if (mVIBSPKFilter) { mVIBSPKFilter->start(); }
+        if (mVIBSPKFilter) { mVIBSPKFilter->start(bfirstdatawrite); }
 //#endif
 
     }
@@ -368,7 +368,7 @@ void AudioMTKFilterManager::start()
         // stop acf
         if (mSpeakerFilter) { mSpeakerFilter->stop(); }
         // start hcf
-        if (mHeadphoneFilter) { mHeadphoneFilter->start(); }
+        if (mHeadphoneFilter) { mHeadphoneFilter->start(bfirstdatawrite); }
 
         if (mEnhanceFilter)
         {
@@ -380,7 +380,7 @@ void AudioMTKFilterManager::start()
             {
                 if (!mEnhanceFilter->isStart())
                 {
-                    mEnhanceFilter->start();
+                    mEnhanceFilter->start(bfirstdatawrite);
                 }
                 else
                 {
@@ -397,7 +397,7 @@ void AudioMTKFilterManager::start()
         if (mHeadphoneFilter) { mHeadphoneFilter->stop(); }
         if (mEnhanceFilter) { mEnhanceFilter->stop(); }
         if (mSpeakerFilter) { mSpeakerFilter->stop(); }
-        if (mVIBSPKFilter) { mVIBSPKFilter->start(); }
+        if (mVIBSPKFilter) { mVIBSPKFilter->start(bfirstdatawrite); }
     }   
     }   
 //#endif

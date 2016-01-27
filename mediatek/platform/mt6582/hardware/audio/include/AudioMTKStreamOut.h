@@ -265,6 +265,7 @@ class AudioMTKStreamOut : public android_audio_legacy::AudioStreamOut
 //#endif
         uint64_t mPresentedBytes;
         timespec mPresentedTime;
+        bool mDuringFirstDataWrite;
 
 
 };

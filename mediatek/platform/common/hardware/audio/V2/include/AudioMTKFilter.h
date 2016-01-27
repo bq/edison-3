@@ -17,7 +17,7 @@ class AudioMTKFilter
                        uint32_t format,
                        size_t bufferSize);
         ~AudioMTKFilter();
-        void start();
+        void start(bool bfirstdatawrite = false);
         void stop();
         void pause();
         void resume();
@@ -50,7 +50,7 @@ class AudioMTKFilterManager
                               uint32_t format,
                               size_t bufferSize);
         ~AudioMTKFilterManager();
-        void start();
+        void start(bool bfirstdatawrite=false);
         void stop();
         bool isParamFixed();
         void setDevice(uint32_t devices);

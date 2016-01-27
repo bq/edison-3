@@ -16,6 +16,14 @@
 
 <favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
     <!-- Far-left screen [0] -->
+    <appwidget
+        launcher:packageName="com.google.android.googlequicksearchbox"
+        launcher:className="com.google.android.googlequicksearchbox.SearchWidgetProvider"
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="0"
+        launcher:spanX="4"
+        launcher:spanY="1" />
 
     <!-- Left screen [1] -->
   
@@ -34,23 +42,38 @@
         launcher:x="0"
         launcher:y="0" >
         <favorite
-        launcher:className="com.google.android.apps.chrome.Main"
-        launcher:packageName="com.android.chrome" />
+            launcher:className="com.google.android.googlequicksearchbox.SearchActivity"
+            launcher:packageName="com.google.android.googlequicksearchbox" />
+    <favorite
+    	  launcher:packageName="com.android.chrome"
+        launcher:className="com.google.android.apps.chrome.Main" />
         <favorite
-        launcher:className="com.google.android.gm.ConversationListActivityGmail"
-        launcher:packageName="com.google.android.gm" />
+            launcher:className="com.google.android.gm.ConversationListActivityGmail"
+            launcher:packageName="com.google.android.gm" />
         <favorite
-        launcher:className="com.google.android.apps.plus.phone.HomeActivity"
-        launcher:packageName="com.google.android.apps.plus" />
+            launcher:className="com.google.android.maps.MapsActivity"
+            launcher:packageName="com.google.android.apps.maps" />
         <favorite
-        launcher:className="com.google.android.maps.MapsActivity"
-        launcher:packageName="com.google.android.apps.maps" />
+            launcher:className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"
+            launcher:packageName="com.google.android.youtube" />
         <favorite
-        launcher:className="com.android.music.activitymanagement.TopLevelActivity"
-        launcher:packageName="com.google.android.music" />
+            launcher:className="com.google.android.apps.docs.app.NewMainProxyActivity"
+            launcher:packageName="com.google.android.apps.docs" />
         <favorite
-        launcher:className="com.google.android.youtube.videos.EntryPoint"
-        launcher:packageName="com.google.android.videos" />
+            launcher:className="com.android.music.activitymanagement.TopLevelActivity"
+            launcher:packageName="com.google.android.music" />
+        <favorite
+            launcher:className="com.google.android.youtube.videos.EntryPoint"
+            launcher:packageName="com.google.android.videos" />
+        <favorite
+            launcher:className="com.google.android.talk.SigningInActivity"
+            launcher:packageName="com.google.android.talk" />
+        <favorite
+            launcher:className="com.google.android.apps.plus.phone.ConversationListActivity"
+            launcher:packageName="com.google.android.apps.plus" />
+        <favorite
+            launcher:className="com.google.android.apps.plus.phone.HomeActivity"
+            launcher:packageName="com.google.android.apps.plus" />
         <favorite
         launcher:className="com.google.android.apps.books.app.BooksActivity"
         launcher:packageName="com.google.android.apps.books" />
@@ -58,21 +81,9 @@
         launcher:className="com.google.apps.dots.android.app.activity.CurrentsStartActivity"
         launcher:packageName="com.google.android.apps.magazines" />
         <favorite
-        launcher:className="com.google.android.gms.games.ui.destination.main.MainActivity"
-        launcher:packageName="com.google.android.play.games" />
-        <favorite
-        launcher:className="com.google.android.apps.docs.app.NewMainProxyActivity"
-        launcher:packageName="com.google.android.apps.docs" />
-        <favorite
-        launcher:className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"
-        launcher:packageName="com.google.android.youtube" />
-        <favorite
-        launcher:className="com.google.android.apps.plus.phone.ConversationListActivity"
-        launcher:packageName="com.google.android.apps.plus" />
-        <favorite
-        launcher:className="com.google.android.talk.SigningInActivity"
-        launcher:packageName="com.google.android.talk" />
-     </folder>
+            launcher:className="com.google.android.gms.games.ui.destination.main.MainActivity"
+            launcher:packageName="com.google.android.play.games" />
+    </folder>
     
     <favorite
         launcher:packageName="com.android.gallery3d"
